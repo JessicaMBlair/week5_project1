@@ -211,8 +211,37 @@ ul {
 
 
 .btn-success,
-.btn-danger {
+.btn-danger,
+.btn-remove {
 	display:block;
 	width: 100%;
 	margin: 40px auto;
+}
+.btn-remove {
+	color: #fff;
+	background-color: #900;
+	border-color: #900;
+}
+.btn-remove:hover {
+	color: #fff;
+	background-color: #C00;
+	border-color: #C00;
+}
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+ul#list li.placeholder {
+  position: relative;
+  /** More li styles **/
+}
+ul#list li.placeholder:before {
+  position: absolute;
+  /** Define arrowhead **/
 }
