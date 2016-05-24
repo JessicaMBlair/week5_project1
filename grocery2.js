@@ -71,15 +71,28 @@ statusComplete();
   ];
  
  ///Not working... 
-	$('#list li').dblclick(function() {
-		$(this).css("background-color", "pink");
-		for(i=0; i<groceries.length; i++){
-  		var item = groceries[i] 
- 			if (item.status === "needed"){
-				$(item.status).replace(/needed/g, "complete");
+ 
+ 
+ 	$("#list li").dblclick(function(){
+        $("#list li").each(function(){
+            if (status === "needed") {
+				$(this).replaceWith("complete").appendTo("#purchased");
 			}
-		}
-	});
+        });
+    });
+	
+	
+// Additonal....	
+	
+// 	$('#list li').dblclick(function() {
+// 		$(this).css("background-color", "pink");
+// 		for(i=0; i<groceries.length; i++){
+//   		var item = groceries[i] 
+//  			if (item.status === "needed"){
+// 				$(item.status).replace(/needed/g, "complete");
+// 			}
+// 		}
+// 	});
 
 // More not working options
 
