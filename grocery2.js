@@ -69,5 +69,17 @@ statusComplete();
     {name: "Limes", status: "complete", price: ".33", quantity: 3},
     {name: "Jalapeno", status: "complete", price: ".15", quantity: 2}
   ];
+ 
+ ///Not working... 
+	$('#list li').dblclick(function() {
+		$(this).css("background-color", "pink");
+		for(i=0; i<groceries.length; i++){
+  		var item = groceries[i] 
+ 			if (item.status === "needed"){
+				$(item.status).replace(/needed/g, "complete");
+			}
+		}
+	});
 
+	
 });
