@@ -81,5 +81,27 @@ statusComplete();
 		}
 	});
 
+// More not working options
+
+	// 	$('#list li').dblclick(function() {
+	// 	for(i=0; i<groceries.length; i++){
+ // 		var item = groceries[i]; 
+ //			if (item.status === "needed"){
+	// 			$(this).replaceWith($("<li>" + item.name + " complete" + " (" + item.quantity + ") @ $" + item.price + "</li>"));
+	// 		}
+	// 	}
+	// });
+
+
+
+	// $('#list li').dblclick(function() {
+	// 	for(i=0; i<groceries.length; i++){
+ // 		var item = groceries[i]; 
+ //			if (item.status === "needed"){
+	// 			$(this).replaceWith("complete");
+	// 		}
+	// 	}
+	// });
+
 	
 });
